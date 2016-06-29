@@ -72,10 +72,10 @@ class MailjetServiceProvider extends ServiceProvider {
     {
         $mailer->setContainer($app);
 
-        if ($app->bound('log'))
+        /*if ($app->bound('log'))
         {
             $mailer->setLogger($app['log']->getMonolog());
-        }
+        }*/
 
         if ($app->bound('queue'))
         {
